@@ -1,6 +1,5 @@
 .text,
 .text1 {
-  align-self: stretch;
   position: relative;
 }
 .text {
@@ -8,6 +7,7 @@
   line-height: 72px;
 }
 .text1 {
+  align-self: stretch;
   font-size: var(--body2-normal-all-size);
   line-height: 24px;
   color: var(--gray-600);
@@ -49,6 +49,7 @@
   overflow: hidden;
   flex-shrink: 0;
 }
+.group,
 .hire,
 .icon1 {
   display: flex;
@@ -62,51 +63,49 @@
   flex-direction: column;
   justify-content: center;
 }
+.group,
 .hire {
   flex-direction: row;
   justify-content: space-between;
-}
-.group,
-.icon-button {
-  display: flex;
-  justify-content: center;
 }
 .group {
   align-self: stretch;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: var(--gap-5xs);
   font-size: var(--body2-normal-all-size);
   color: var(--gray-600);
 }
-.icon-button {
-  border-radius: var(--br-5xs);
-  flex-direction: row;
-  align-items: center;
-  padding: var(--padding-7xs);
-}
-.actions,
-.column,
+.icon-button,
 .links {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-button {
+  border-radius: var(--br-5xs);
+  justify-content: center;
+  padding: var(--padding-7xs);
 }
 .links {
   overflow: hidden;
-  flex-direction: row;
-  align-items: center;
+  justify-content: flex-start;
   gap: 4px;
 }
 .actions,
 .column {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 .actions {
   align-self: stretch;
+  justify-content: flex-start;
 }
 .column {
   overflow: hidden;
+  justify-content: center;
   gap: 48px;
   max-width: 768px;
 }
@@ -116,21 +115,26 @@
   height: 430px;
   object-fit: cover;
 }
-.hero {
+.hero-2 {
   position: relative;
-  background-color: var(--gray-default);
+  background-color: var(--neutral-white);
   width: 100%;
-  height: 979px;
-  overflow: hidden;
+  height: 921px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
-  padding: 96px 80px;
+  justify-content: center;
+  padding: 50px;
   box-sizing: border-box;
+  gap: 337px;
   text-align: left;
   font-size: var(--heading-h1-bold-desktop-size);
   color: #111827;
   font-family: var(--body2-normal-all);
+}
+@media screen and (max-width: 960px) {
+  .untitled-design-18-1 {
+    min-height: 100px;
+  }
 }
