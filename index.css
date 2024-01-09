@@ -1,0 +1,136 @@
+.text,
+.text1 {
+  align-self: stretch;
+  position: relative;
+}
+.text {
+  letter-spacing: -0.02em;
+  line-height: 72px;
+}
+.text1 {
+  font-size: var(--body2-normal-all-size);
+  line-height: 24px;
+  color: var(--gray-600);
+}
+.content {
+  width: 393px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.icon,
+.text2 {
+  position: relative;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.text2 {
+  line-height: 24px;
+}
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.icon-dot-emerald-500 {
+  position: relative;
+  border-radius: 20px;
+  background-color: #10b981;
+  width: 8px;
+  height: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.hire,
+.icon1 {
+  display: flex;
+  align-items: center;
+}
+.icon1 {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.hire {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.group,
+.icon-button {
+  display: flex;
+  justify-content: center;
+}
+.group {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-5xs);
+  font-size: var(--body2-normal-all-size);
+  color: var(--gray-600);
+}
+.icon-button {
+  border-radius: var(--br-5xs);
+  flex-direction: row;
+  align-items: center;
+  padding: var(--padding-7xs);
+}
+.actions,
+.column,
+.links {
+  display: flex;
+  justify-content: flex-start;
+}
+.links {
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.actions,
+.column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.actions {
+  align-self: stretch;
+}
+.column {
+  overflow: hidden;
+  gap: 48px;
+  max-width: 768px;
+}
+.untitled-design-18-1 {
+  position: relative;
+  width: 439px;
+  height: 430px;
+  object-fit: cover;
+}
+.hero {
+  position: relative;
+  background-color: var(--gray-default);
+  width: 100%;
+  height: 979px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 96px 80px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--heading-h1-bold-desktop-size);
+  color: #111827;
+  font-family: var(--body2-normal-all);
+}

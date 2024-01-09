@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --body2-normal-all: Inter;
+
+  /* font sizes */
+  --body2-normal-all-size: 16px;
+  --heading-h1-bold-desktop-size: 60px;
+
+  /* Colors */
+  --gray-default: #fff;
+  --gray-600: #4b5563;
+
+  /* Gaps */
+  --gap-5xs: 8px;
+
+  /* Paddings */
+  --padding-7xs: 6px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+}
