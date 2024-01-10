@@ -21,13 +21,13 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.icon-alternate-map-marker {
-  position: relative;
+.vector-icon {
   width: 14px;
   height: 18px;
 }
 .icon,
-.text2 {
+.text2,
+.vector-icon {
   position: relative;
 }
 .icon {
@@ -89,20 +89,20 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.icon-linkedin {
+.vector-icon1 {
   position: relative;
   width: 24.2px;
   height: 24.2px;
 }
-.icon-linkedin-parent {
+.vector-parent {
   flex-direction: row;
   align-items: flex-start;
   gap: 12px;
 }
 .frame1,
-.icon-linkedin-parent,
 .info-text,
-.links {
+.links,
+.vector-parent {
   display: flex;
   justify-content: flex-start;
 }
