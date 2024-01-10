@@ -12,13 +12,22 @@ body {
   --heading-h1-bold-desktop-size: 60px;
 
   /* Colors */
+  --color-white: #fff;
   --gray-600: #4b5563;
+  --color-mediumseagreen: #10b981;
   --gray-900: #111827;
 
   /* Gaps */
   --gap-122xl: 141px;
   --gap-5xs: 8px;
+  --gap-29xl: 48px;
+  --gap-xs: 12px;
+  --gap-53xl: 72px;
 
   /* Paddings */
+  --padding-31xl: 50px;
   --padding-8xs: 5px;
+
+  /* Border radiuses */
+  --br-xl: 20px;
 }
