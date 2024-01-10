@@ -19,8 +19,5 @@ body {
   --gap-5xs: 8px;
 
   /* Paddings */
-  --padding-7xs: 6px;
-
-  /* Border radiuses */
-  --br-5xs: 8px;
+  --padding-8xs: 5px;
 }

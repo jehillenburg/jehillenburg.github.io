@@ -21,6 +21,11 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+.icon-alternate-map-marker {
+  position: relative;
+  width: 14px;
+  height: 18px;
+}
 .icon,
 .text2 {
   position: relative;
@@ -30,6 +35,7 @@
   height: 24px;
   overflow: hidden;
   flex-shrink: 0;
+  display: none;
 }
 .text2 {
   line-height: 24px;
@@ -43,6 +49,8 @@
   width: 160.8px;
   flex-direction: row;
   align-items: center;
+  padding: 0 0 0 var(--padding-8xs);
+  box-sizing: border-box;
   gap: var(--gap-5xs);
 }
 .frame {
@@ -64,7 +72,6 @@
   flex-shrink: 0;
 }
 .hire,
-.icon-button,
 .icon1 {
   display: flex;
   align-items: center;
@@ -77,20 +84,23 @@
   flex-direction: column;
   justify-content: center;
 }
-.hire,
-.icon-button {
-  flex-direction: row;
-}
 .hire {
   width: 222.9px;
+  flex-direction: row;
   justify-content: space-between;
 }
-.icon-button {
-  border-radius: var(--br-5xs);
-  justify-content: center;
-  padding: var(--padding-7xs);
+.icon-linkedin {
+  position: relative;
+  width: 24.2px;
+  height: 24.2px;
+}
+.icon-linkedin-parent {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 12px;
 }
 .frame1,
+.icon-linkedin-parent,
 .info-text,
 .links {
   display: flex;
@@ -101,7 +111,8 @@
   overflow: hidden;
   flex-direction: row;
   align-items: center;
-  gap: 4px;
+  padding: 0 0 0 var(--padding-8xs);
+  box-sizing: border-box;
 }
 .frame1,
 .info-text {
