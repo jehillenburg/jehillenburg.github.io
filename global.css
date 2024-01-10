@@ -12,8 +12,8 @@ body {
   --heading-h1-bold-desktop-size: 60px;
 
   /* Colors */
-  --neutral-white: #fff;
   --gray-600: #4b5563;
+  --gray-900: #111827;
 
   /* Gaps */
   --gap-5xs: 8px;
