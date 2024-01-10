@@ -16,6 +16,7 @@ body {
   --gray-900: #111827;
 
   /* Gaps */
+  --gap-122xl: 141px;
   --gap-5xs: 8px;
 
   /* Paddings */
