@@ -21,5 +21,6 @@ body {
   --gap-5xs: 8px;
 
   /* Paddings */
+  --padding-31xl: 50px;
   --padding-8xs: 5px;
 }
