@@ -50,11 +50,20 @@
                 id="iconRSSSquare"
               />
 
+              <img class="vector-icon1" alt="" src="./public/vector3.svg" />
+
               <img
-                class="vector-icon2"
+                class="frame-child"
                 alt=""
-                src="./public/vector3.svg"
-                id="vectorIcon2"
+                src="./public/vector4.svg"
+                id="vectorIcon3"
+              />
+
+              <img
+                class="frame-child"
+                alt=""
+                src="./public/group-2.svg"
+                id="groupIcon"
               />
             </div>
           </div>
@@ -76,11 +85,18 @@
           window.open("https://wondersofwildlife.org/volunteer/");
         });
       }
-      
-      var vectorIcon2 = document.getElementById("vectorIcon2");
-      if (vectorIcon2) {
-        vectorIcon2.addEventListener("click", function () {
+
+      var vectorIcon3 = document.getElementById("vectorIcon3");
+      if (vectorIcon3) {
+        vectorIcon3.addEventListener("click", function () {
           window.open("https://medium.com/@evanhillenburg72");
+        });
+      }
+
+      var groupIcon = document.getElementById("groupIcon");
+      if (groupIcon) {
+        groupIcon.addEventListener("click", function () {
+          window.open("https://hburg17.artstation.com/");
         });
       }
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
@@ -98,10 +114,10 @@
           threshold: 0.15,
         }
       );
-      
+
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-      </script>
+    </script>
   </body>
 </html>
