@@ -71,16 +71,28 @@
   align-items: flex-start;
   justify-content: center;
 }
-.frame-child,
-.icon-rss-square,
 .vector-icon1 {
   position: relative;
   width: 24px;
   height: 24px;
 }
-.frame-child,
 .icon-rss-square {
+  width: 24px;
+}
+.frame-child,
+.frame-icon,
+.icon-rss-square {
+  position: relative;
+  height: 24px;
   cursor: pointer;
+}
+.frame-icon {
+  width: 25px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-child {
+  width: 24px;
 }
 .vector-parent {
   width: 172px;
