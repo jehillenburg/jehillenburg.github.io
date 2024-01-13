@@ -12,15 +12,17 @@ body {
   --heading-h1-bold-desktop-size: 60px;
 
   /* Colors */
-  --color-white: #fff;
   --gray-600: #4b5563;
   --gray-900: #111827;
 
   /* Gaps */
-  --gap-122xl: 141px;
+  --gap-131xl: 150px;
+  --gap-81xl: 100px;
+  --gap-0: 0px;
   --gap-5xs: 8px;
 
   /* Paddings */
   --padding-31xl: 50px;
-  --padding-8xs: 5px;
+  --padding-81xl: 100px;
+  --padding-mini: 15px;
 }
