@@ -118,7 +118,7 @@
 }
 .intro-wrapper.animate,
 .untitled-design-18-1-wrapper.animate {
-  animation: 2s ease-in 0s 1 normal forwards fade-in;
+  animation: 0.5s ease-in 0s 1 normal forwards fade-in;
 }
 .untitled-design-18-1 {
   position: relative;
