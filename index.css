@@ -1,3 +1,11 @@
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .text {
   flex: 1;
   position: relative;
@@ -104,8 +112,13 @@
   background-color: transparent;
   flex-direction: row;
   justify-content: space-between;
+  opacity: 0;
   min-width: 400px;
   max-width: 500px;
+}
+.intro-wrapper.animate,
+.untitled-design-18-1-wrapper.animate {
+  animation: 2s ease-in 0s 1 normal forwards fade-in;
 }
 .untitled-design-18-1 {
   position: relative;
@@ -125,6 +138,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  opacity: 0;
   min-width: 400px;
   max-width: 500px;
   min-height: 500px;

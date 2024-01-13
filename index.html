@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="test-2">
-      <div class="intro-wrapper">
+      <div class="intro-wrapper" data-animate-on-scroll>
         <div class="intro">
           <div class="title">
             <b class="text">Hi, I’m Evan</b>
@@ -41,11 +41,11 @@
           </div>
           <div class="links">
             <div class="vector-parent">
-              <img class="vector-icon1" alt="" src="./public/vector1.svg" />
+              <img class="vector-icon1" alt="" src="./public/vector11.svg" />
 
-              <img class="vector-icon1" alt="" src="./public/vector2.svg" />
+              <img class="vector-icon1" alt="" src="./public/vector21.svg" />
 
-              <img class="vector-icon1" alt="" src="./public/vector3.svg" />
+              <img class="vector-icon1" alt="" src="./public/vector31.svg" />
 
               <img
                 class="icon-rss-square"
@@ -57,7 +57,7 @@
           </div>
         </div>
       </div>
-      <div class="untitled-design-18-1-wrapper">
+      <div class="untitled-design-18-1-wrapper" data-animate-on-scroll>
         <img
           class="untitled-design-18-1"
           alt=""
@@ -73,6 +73,25 @@
           window.open("https://wondersofwildlife.org/volunteer/");
         });
       }
-      </script>
+      var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+      var observer = new IntersectionObserver(
+        (entries) => {
+          for (const entry of entries) {
+            if (entry.isIntersecting || entry.intersectionRatio > 0) {
+              const targetElement = entry.target;
+              targetElement.classList.add("animate");
+              observer.unobserve(targetElement);
+            }
+          }
+        },
+        {
+          threshold: 0.15,
+        }
+      );
+
+      for (let i = 0; i < scrollAnimElements.length; i++) {
+        observer.observe(scrollAnimElements[i]);
+      }
+    </script>
   </body>
 </html>
