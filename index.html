@@ -43,15 +43,18 @@
             <div class="vector-parent">
               <img class="vector-icon1" alt="" src="./public/vector11.svg" />
 
-              <img class="vector-icon1" alt="" src="./public/vector21.svg" />
-
-              <img class="vector-icon1" alt="" src="./public/vector31.svg" />
-
               <img
                 class="icon-rss-square"
                 alt=""
                 src="./public/-icon-rss-square.svg"
                 id="iconRSSSquare"
+              />
+
+              <img
+                class="vector-icon2"
+                alt=""
+                src="./public/vector3.svg"
+                id="vectorIcon2"
               />
             </div>
           </div>
@@ -73,6 +76,13 @@
           window.open("https://wondersofwildlife.org/volunteer/");
         });
       }
+      
+      var vectorIcon2 = document.getElementById("vectorIcon2");
+      if (vectorIcon2) {
+        vectorIcon2.addEventListener("click", function () {
+          window.open("https://medium.com/@evanhillenburg72");
+        });
+      }
       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
       var observer = new IntersectionObserver(
         (entries) => {
@@ -88,10 +98,10 @@
           threshold: 0.15,
         }
       );
-
+      
       for (let i = 0; i < scrollAnimElements.length; i++) {
         observer.observe(scrollAnimElements[i]);
       }
-    </script>
+      </script>
   </body>
 </html>

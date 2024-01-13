@@ -72,16 +72,18 @@
   justify-content: center;
 }
 .icon-rss-square,
-.vector-icon1 {
+.vector-icon1,
+.vector-icon2 {
   position: relative;
   width: 24px;
   height: 24px;
 }
-.icon-rss-square {
+.icon-rss-square,
+.vector-icon2 {
   cursor: pointer;
 }
 .vector-parent {
-  width: 137px;
+  width: 172px;
   flex-direction: row;
   justify-content: flex-start;
   gap: 12px;
